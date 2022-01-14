@@ -1,0 +1,18 @@
+@media (max-width: 95ch) {
+    main {
+        font-size: 14px;
+        grid-template-columns:minmax(1rem, 1fr) minmax(auto, 50ch) minmax(1rem, 1fr);
+    }
+
+    .content__blocks {
+        margin-bottom: 50px;
+    }
+
+    .content__blocks__block {
+        flex-direction: column;
+    }
+
+    .content__blocks__block .description {
+        width: 100%;
+    }
+}

@@ -1,0 +1,83 @@
+header {
+    padding: 0 30px;
+    height: 50px;
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.menu {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.menu a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.menu a:active, .menu a:hover {
+    color: #f0a500;
+}
+nav ul {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav > ul > li {
+    float: left;
+}
+
+nav ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+}
+nav ul li:hover ul {
+    display: block;
+    background-color: white;
+    border: 1px solid black;
+    +
+    border-radius: 4px;
+    z-index: 10;
+}
+
+.search {
+    height: 24px;
+    width: 240px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2px 8px;
+    color: gray;
+}
+
+.search input {
+    border: none;
+    width: 100%;
+    outline: none;
+}
+
+.search svg {
+    margin-right: 2px;
+}

@@ -1,0 +1,31 @@
+footer {
+    color: #eeeeee;
+    min-height: 75px;
+    border-top: 2px solid black;
+    background-color: #393e46;
+}
+
+.footer_content {
+    margin: 18px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_content__links svg {
+    margin-right: 5px;
+}
+
+.footer_content__links a {
+    height: 24px;
+    text-decoration: none;
+    color: inherit;
+    margin-top: 5px;
+    margin-right: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer_content__links {
+    display: flex;
+    flex-direction: row;
+}
